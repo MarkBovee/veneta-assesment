@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Veneta.Assessments.Crawler/Veneta.Assessments.Crawler.csproj" />
+  <Project Path="Veneta.Assessments.Crawler.Tests/Veneta.Assessments.Crawler.Tests.csproj" />
+</Solution>

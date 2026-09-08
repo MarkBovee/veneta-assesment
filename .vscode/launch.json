@@ -1,0 +1,66 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Backend ConsumerService",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/Veneta.Assessments.Backend/Veneta.Assessments.Backend.ConsumerService/bin/Debug/net10.0/Veneta.Assessments.Backend.ConsumerService.dll",
+            "cwd": "${workspaceFolder}/Veneta.Assessments.Backend/Veneta.Assessments.Backend.ConsumerService",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "preLaunchTask": "build-backend",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/"
+            },
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Crawler",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler/bin/Debug/net10.0/Veneta.Assessments.Crawler.dll",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development",
+                "Crawler__ApiBaseUrl": "http://localhost:59142",
+                "Crawler__DatabasePath": "Data/crawler.sqlite"
+            },
+            "preLaunchTask": "build-crawler",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Aspire AppHost",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost/bin/Debug/net10.0/Veneta.Assessments.AppHost.dll",
+            "cwd": "${workspaceFolder}/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost",
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            },
+            "preLaunchTask": "build-apphost",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bLogin to the dashboard at\\s+(https?://\\S+)",
+                "uriFormat": "%s"
+            },
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Backend + Crawler",
+            "configurations": [
+                "Backend ConsumerService",
+                "Crawler"
+            ],
+            "stopAll": true
+        }
+    ]
+}

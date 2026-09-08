@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Veneta.Assessments.Crawler": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "Crawler__ApiBaseUrl": "http://localhost:59142",
+        "Crawler__DatabasePath": "Data/crawler.sqlite"
+      }
+    }
+  }
+}

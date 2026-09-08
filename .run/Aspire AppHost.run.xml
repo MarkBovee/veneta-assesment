@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" type="DotNetProject" factoryName=".NET Project" name="Aspire AppHost">
+    <option name="PROJECT_PATH" value="$PROJECT_DIR$/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost.csproj" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="ENV_VARIABLES">
+      <map>
+        <entry key="DOTNET_ENVIRONMENT" value="Development" />
+      </map>
+    </option>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,27 @@
+﻿@Veneta.Assessments.Backend.ConsumerService_HostAddress = http://localhost:59142
+
+
+GET {{Veneta.Assessments.Backend.ConsumerService_HostAddress}}/consumers
+Accept: application/json
+
+###
+GET {{Veneta.Assessments.Backend.ConsumerService_HostAddress}}/consumers/b6d09d51-8ce2-4d0b-a795-6e7cfb67567e
+Accept: application/json
+
+###
+
+POST {{Veneta.Assessments.Backend.ConsumerService_HostAddress}}/consumers
+Accept: application/json
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "address": {
+        "postalCode": "1111aa",
+        "street": "example street",
+        "houseNumber": "1a"
+    },
+    "firstName": "firstName",
+    "lastName": "lastName"
+}
+###

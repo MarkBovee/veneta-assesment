@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  	<UseAppHost>false</UseAppHost>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+	<InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.11" />
+    <PackageReference Include="NEventStore" Version="10.2.0" />
+    <PackageReference Include="NEventStore.Persistence.Sql" Version="10.2.0" />
+    <PackageReference Include="NEventStore.PollingClient" Version="10.2.0" />
+    <PackageReference Include="NEventStore.Serialization.Json" Version="10.2.0" />
+    <PackageReference Include="OpenTelemetry" Version="1.16.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.16.0" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.16.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.16.0" />
+  </ItemGroup>
+
+</Project>

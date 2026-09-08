@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Veneta.Assessments.Backend.ConsumerService/Veneta.Assessments.Backend.ConsumerService.csproj" />
+  <Project Path="Veneta.Assessments.Backend.ConsumerService.Tests/Veneta.Assessments.Backend.ConsumerService.Tests.csproj" />
+</Solution>

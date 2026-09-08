@@ -1,0 +1,20 @@
+﻿<Project Sdk="Aspire.AppHost.Sdk/13.5.3">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AspireUseCliBundle>false</AspireUseCliBundle>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <UseAppHost>false</UseAppHost>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Veneta.Assessments.Backend\Veneta.Assessments.Backend.ConsumerService\Veneta.Assessments.Backend.ConsumerService.csproj" />
+    <ProjectReference Include="..\..\Veneta.Assessments.Crawler\Veneta.Assessments.Crawler\Veneta.Assessments.Crawler.csproj" />
+    <ProjectReference Include="..\ApiScenario\Veneta.Assessments.ApiScenario.csproj" />
+  </ItemGroup>
+
+</Project>

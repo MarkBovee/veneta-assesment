@@ -1,0 +1,14 @@
+<Solution>
+  <File Path="README.md" />
+  <File Path="AGENTS.md" />
+  <File Path=".editorconfig" />
+  <File Path=".gitignore" />
+  <File Path="docs/assessment-spec.md" />
+  <File Path="docs/implementation-plan.md" />
+  <Project Path="Veneta.Assessments.Backend/Veneta.Assessments.Backend.ConsumerService/Veneta.Assessments.Backend.ConsumerService.csproj" />
+  <Project Path="Veneta.Assessments.Backend/Veneta.Assessments.Backend.ConsumerService.Tests/Veneta.Assessments.Backend.ConsumerService.Tests.csproj" />
+  <Project Path="Veneta.Assessments.Crawler/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler.csproj" />
+  <Project Path="Veneta.Assessments.Crawler/Veneta.Assessments.Crawler.Tests/Veneta.Assessments.Crawler.Tests.csproj" />
+  <Project Path="Veneta.Assessments.AppHost/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost.csproj" />
+  <Project Path="Veneta.Assessments.AppHost/ApiScenario/Veneta.Assessments.ApiScenario.csproj" />
+</Solution>

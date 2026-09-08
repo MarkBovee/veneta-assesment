@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" type="DotNetProject" factoryName=".NET Project" name="Crawler">
+    <option name="PROJECT_PATH" value="$PROJECT_DIR$/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler.csproj" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="ENV_VARIABLES">
+      <map>
+        <entry key="DOTNET_ENVIRONMENT" value="Development" />
+        <entry key="Crawler__ApiBaseUrl" value="http://localhost:59142" />
+        <entry key="Crawler__DatabasePath" value="Data/crawler.sqlite" />
+      </map>
+    </option>
+    <method v="2" />
+  </configuration>
+</component>

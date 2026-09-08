@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Veneta.Assessments.Backend.ConsumerService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:59141;http://localhost:59142"
+    }
+  }
+}

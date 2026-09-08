@@ -1,0 +1,67 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-backend",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/Veneta.Assessments.Backend/Veneta.Assessments.Backend.ConsumerService/Veneta.Assessments.Backend.ConsumerService.csproj",
+        "-p:GenerateRuntimeConfigurationFiles=true",
+        "-p:UseAppHost=false"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    },
+    {
+      "label": "build-crawler",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    },
+    {
+      "label": "build-apphost",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost/Veneta.Assessments.AppHost.csproj",
+        "-p:AspireUseCliBundle=false",
+        "-p:GenerateRuntimeConfigurationFiles=true",
+        "-p:UseAppHost=false"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    },
+    {
+      "label": "test-backend",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "test",
+        "${workspaceFolder}/Veneta.Assessments.Backend/Veneta.Assessments.Backend.ConsumerService.Tests/Veneta.Assessments.Backend.ConsumerService.Tests.csproj",
+        "--no-restore"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "test"
+    },
+    {
+      "label": "test-crawler",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "test",
+        "${workspaceFolder}/Veneta.Assessments.Crawler/Veneta.Assessments.Crawler.Tests/Veneta.Assessments.Crawler.Tests.csproj",
+        "--no-restore"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "test"
+    }
+  ]
+}
